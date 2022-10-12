@@ -1,0 +1,42 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <app-navbar></app-navbar>
+
+
+    <table  class="table">
+        <thead >
+            <th scope="col">Id</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Maiden Name </th>
+            <th scope="col"> Age</th>
+            <th scope="col"> Email</th>
+            <th scope="col"> Gender</th>
+            <th scope="col"> Image</th>
+            <th scope="col"> Mobile No</th>
+           
+            
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of userData.users">
+                 
+       
+                <td>{{i.id}}</td>
+                <td>{{i.firstName}}</td>
+                <td>{{i.lastName}}</td>
+                <td>{{i.maidenName}}</td>
+                <td>{{i.age}}</td>
+                <td>{{i.email}}</td>
+                <td>{{i.gender}}</td>
+                <td><img src="{{i.image}}" alt=""></td>
+                <td>{{i.phone}}</td>
+               
+               
+            
+            </tr>
+        </tbody>
+      </table>
+
+        </div></div></div>
